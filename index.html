@@ -1,81 +1,219 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             text-decoration: none;
             list-style: none;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             font-family: montserrat;
         }
-        nav{
-            background-color: rgb(10,67,139);
+
+        nav {
+            background-color: rgb(10, 67, 139);
             height: 80px;
             width: 100%;
 
         }
-       
-        nav>div>h1{
-           border: 1px solid black;
-           width: 165px;
-          padding: 0px;
-           line-height: 0px;
-           /* padding: 0 0px;  */
-           font-weight: bold;
-           padding-top: px;
+
+        nav>div>h1 {
+            border: 1px solid black;
+            width: 165px;
+            padding: 0px;
+            line-height: 0px;
+            /* padding: 0 0px;  */
+            font-weight: bold;
+            padding-top: px;
         }
-        nav ul{
+
+        nav ul {
             float: right;
             margin-right: 20px;
-           
+
         }
-        nav ul li{
+
+        nav ul li {
             display: inline-block;
             line-height: 80px;
             margin: 0 5px;
-         
-            
-            
+
         }
 
-        nav ul li a{
+        nav ul li a {
             color: white;
             font-size: 17px;
             text-transform: uppercase;
             padding: 7px 13px;
             border-radius: 3px;
-            
+
         }
 
-        a.active, a.hover{
+        a.active,
+        a.hover {
             background: #1b9bff;
             transition: 0.5sec;
         }
+
+        #cont1 {
+            background-image: url("https://wallpapercave.com/dwp2x/w8Lgiy5.jpg");
+            border: 1px solid black;
+            height: 460px;
+            width: 100%;
+        }
+
+        #cont1>div {
+            height: 82%;
+            width: 95%;
+            margin: auto;
+            background-color: white;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .line {
+            width: 95%;
+            border: 0.5px solid gray;
+            border-radius: 20px;
+            margin: auto;
+            background-color: rgb(219, 217, 217);
+
+        }
+
+        #ul1 {
+            float: none;
+            margin-left: 35%;
+        }
+
+        #ul1 li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            font-weight: bold;
+        }
+
+        #ul1 li a {
+            color: black;
+        }
+
+        div>h4 {
+            margin: 20px 0 0 5%;
+            color: gray;
+        }
+
+        #input {
+            height: 55px;
+            width: 575px;
+            margin: 20px 0 0 65px;
+            border-radius: 10px;
+            border: 1px solid black2
+        }
+
+        #btn {
+            width: 180px;
+            height: 45px;
+            margin: 20px 0px 40px 600px;
+            border-radius: 10px;
+            background-color: rgb(10, 67, 139);
+            border: 0px rgb(10, 67, 139);
+            color: white;
+            font-weight: 500;
+            font-size: large;
+        }
+
+        #cont2 {
+            margin-top: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding-top: 30px;
+
+
+        }
+
+        #cont2 div>img {
+            width: 300px;
+            height: 300px;
+        }
     </style>
 </head>
+
 <body>
-   <nav>
-    <div>
-        <H1>
-            GHUMO CITY
-         </H1>  
+    <nav>
+        <div>
+            <H1>
+                GHUMO CITY
+            </H1>
+        </div>
+        <ul>
+            <li> <a href=""> Espanol</a> </li>
+            <li> <a href="">List your property</a> </li>
+            <li> <a href="">Support</a> </li>
+            <li> <a href="">Trips</a> </li>
+            <li> <a href="">Sign in</a> </li>
+        </ul>
+    </nav>
+    <div id="cont1">
+        <div>
+            <ul id="ul1">
+                <li> <a href="">Stays</a></li>
+                <li> <a href="">Flights</a></li>
+                <li> <a href="">Cars</a></li>
+                <li> <a href="">Packages</a></li>
+                <li> <a href="">Things to do</a></li>
+                <li> <a href="">Cruises</a></li>
+            </ul>
+
+            <div class="line"></div>
+            <h4>
+                For expert cruise advice, call 1-855-257-1605.
+            </h4>
+            <input type="text" id="input" placeholder="Going to select destination">
+            <input type="text" id="input" placeholder="Travelers in the cabin">
+            <input type="date" id="input">
+            <input type="date" id="input">
+            <input type="button" name="Search" id="btn" value="Search">
+        </div>
     </div>
-    <ul>
-        <li> <a href=""> Espanol</a>  </li>
-        <li> <a href="">List your property</a>  </li>
-        <li> <a href="">Support</a>  </li>
-        <li> <a href="">Trips</a>  </li>
-        <li> <a href="">Sign in</a>  </li>
-    </ul>
-   </nav>
+    <div id="cont2">
+        <div>
+            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F181008111705-0151-2-mod.jpg"
+                alt="">
+            <p>Plan trip fot the whole
+                family-- from family <br> travel
+                tips to family-friendly filters, <br>
+                our tools make it easy.
+            </p>
+        </div>
+        <div>
+            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F181008111705-0151-2-mod.jpg"
+                alt="">
+            <p>Plan trip fot the whole
+                family-- from family <br> travel
+                tips to family-friendly filters, <br>
+                our tools make it easy.
+            </p>
+        </div>
+        <div>
+            <img src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_634,c_fill,g_auto,h_357,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F181008111705-0151-2-mod.jpg"
+                alt="">
+            <p>Plan trip fot the whole
+                family-- from family <br> travel
+                tips to family-friendly filters, <br>
+                our tools make it easy.
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
